@@ -52,8 +52,9 @@ for y in range(2008,2019):
         del t[p]
    
     if y == 2015:
-        del scores[10:12] #This has been done becuase year 2015 contains out of pattern result
-        
+        del scores[10:12] #This has been done because year 2015 contains out of pattern result
+    
+    #I did not want to add any hard coded data, but 2015 had an out of pattern abandoned match which couldn't be deleted. Same goes for 2019 season. 
     
     t = np.array(t)    
     n = int(len(scores)/2) #No of unabandoned matches
